@@ -8,12 +8,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule} from '@devoto13/angular-fontawesome';
 import { SearchComponent } from './search/search.component';
 import {FormsModule} from '@angular/forms';
+import { ImageviewComponent } from './imageview/imageview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    ImageviewComponent
   ],
   imports: [
     BrowserModule,
