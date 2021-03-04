@@ -5,6 +5,10 @@
   padding: 4px;
 }
 
-section .search {
-  border-bottom: 1px solid lightgray;
+section.search {
+  border-bottom: 10px solid lightgray;
+}
+
+label.invisible {
+  display: none;
 }
