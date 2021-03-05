@@ -1,6 +1,5 @@
 <section id="imageview" class="m-4">
-  <span *ngFor="let image of images" id="my_image" class="mb-2 mr-2 w-auto">
-    <img src='{{image}}' height="180px" alt='{{image.split("/")
-    [image.split("/").length -1]}}' />
+  <span *ngFor="let image of images;" id="my_image" class="w-auto">
+    <img src='{{getPhoto(image)}}' height="180px" />
   </span>
 </section>

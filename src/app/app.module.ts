@@ -9,6 +9,7 @@ import {FontAwesomeModule} from '@devoto13/angular-fontawesome';
 import { SearchComponent } from './search/search.component';
 import {FormsModule} from '@angular/forms';
 import { ImageviewComponent } from './imageview/imageview.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ImageviewComponent } from './imageview/imageview.component';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

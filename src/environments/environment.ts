@@ -3,8 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  Access_key: 'YPFR1Mb1ERtX9LXaxeT0qE3o8sOUatxvaQ4H84X5YVs',
+  Secret_Key: 'QpuQ0tSVfRoKQFcfZSm_Q_gVU434opPHYd-uFIOyA_0',
+  Search_route: '/search/photos/',
+  Api_Base_url: 'https://api.unsplash.com/'
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
