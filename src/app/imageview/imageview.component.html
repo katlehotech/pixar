@@ -1,5 +1,7 @@
-<section id="imageview" class="m-4">
+<section id="imageview" class="m-4 align-self-center text-center align-items-center">
   <span *ngFor="let image of images;" id="my_image" class="w-auto">
-    <img src='{{getPhoto(image)}}' height="180px" />
+    <img [routerLink]="['/details/',getPhoto(image)[1]]" src='{{getPhoto(image)[0]}}' height="280px" />
   </span>
 </section>
+
+<router-outlet></router-outlet>

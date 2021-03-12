@@ -1,0 +1,19 @@
+<section id="search" class="flexbox m-4">
+  <form (submit)="search(keyword.value)" >
+    <label class="invisible" for="search-input">Search</label>
+    <input #keyword id="search-input" type="text" placeholder="Search Location..." class="searchbox flex-fill p-2 w-100" />
+  </form>
+</section>
+
+<div id="placesview" class="placesview">
+  <span *ngFor="let place of responseObject;" id="my_place" class="w-auto">
+   <a [routerLink]="['/images/',getVenue(place)[2]]">
+     <div class="loc_entry">
+     <p class="venue_name">{{getVenue(place)[0]}}</p>
+    <p class="venue_address">{{getVenue(place)[1]}}</p>
+   </div>
+   </a>
+  </span>
+</div>
+
+<router-outlet></router-outlet>

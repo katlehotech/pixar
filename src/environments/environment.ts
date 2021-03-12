@@ -4,10 +4,17 @@
 
 export const environment = {
   production: false,
-  Access_key: 'YPFR1Mb1ERtX9LXaxeT0qE3o8sOUatxvaQ4H84X5YVs',
-  Secret_Key: 'QpuQ0tSVfRoKQFcfZSm_Q_gVU434opPHYd-uFIOyA_0',
-  Search_route: '/search/photos/',
-  Api_Base_url: 'https://api.unsplash.com/'
+  /* Unsplash configs */
+  Unsplash_Access_key: 'YPFR1Mb1ERtX9LXaxeT0qE3o8sOUatxvaQ4H84X5YVs',
+  Unsplash_Secret_Key: 'QpuQ0tSVfRoKQFcfZSm_Q_gVU434opPHYd-uFIOyA_0',
+  Unsplash_Search_route: '/search/photos/',
+  Unsplash_Api_Base_url: 'https://api.unsplash.com/',
+  /* Foursquare */
+  Foursquare_Client_Id: 'Q2YRVTQ0OY50M1KISNOOQNWEB1N4SASNEGWJN4IEUU50VZDB',
+  Foursquare_Client_Secret: 'EGFZY0MOUMJLSEI1050IROASHNZN2CBL5REBOGERJZRKQSBS',
+  Foursquare_Base_Url: 'https://api.foursquare.com/v2',
+  Foursquare_Places_route: '/venues/explore/',
+  Foursquare_location_call: 'https://api.foursquare.com/v2/venues/explore?client_id=Q2YRVTQ0OY50M1KISNOOQNWEB1N4SASNEGWJN4IEUU50VZDB&client_secret=EGFZY0MOUMJLSEI1050IROASHNZN2CBL5REBOGERJZRKQSBS&v=20180323&ll=40.7,-74&limit=20'
 };
 
 

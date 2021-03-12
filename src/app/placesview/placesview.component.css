@@ -1,0 +1,50 @@
+.searchbox {
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+section.search {
+  border-bottom: 10px solid lightgray;
+}
+
+label.invisible {
+  display: none;
+}
+
+
+.placesview {
+  margin: 0;
+  margin-left: 22px;
+}
+
+.loc_entry {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: lightgray;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+}
+
+.loc_entry:hover {
+  background-color: lightskyblue;
+}
+
+.loc_entry .venue_name {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: medium;
+  font-weight: bold;
+  color: #000;
+  text-underline: none;
+}
+
+.loc_entry .venue_address {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: medium;
+  color: #222;
+}

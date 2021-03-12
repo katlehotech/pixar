@@ -10,12 +10,14 @@ import {JsonArray, JsonObject} from '@angular/compiler-cli/ngcc/src/packages/ent
 export class AppComponent {
   title = 'pixar';
   imageData: JsonArray | undefined;
+  keyWord = '';
   constructor(private search: SearchService) {
   }
   getData(data: JsonArray): void {
     console.log(data);
   }
   setKeyword(keyword: string): void {
+    this.keyWord = keyword;
     this.search.getImages(keyword).subscribe((data: JsonObject) => {
       this.imageData = data.results as JsonArray;
     });

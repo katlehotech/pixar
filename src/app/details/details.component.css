@@ -1,0 +1,11 @@
+.det {
+  display: block;
+  padding: 16px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.ans {
+  margin-left: 4px;
+  font-size: medium;
+}

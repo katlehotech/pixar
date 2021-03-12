@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule} from '@devoto13/angular-fontawesome';
-import { SearchComponent } from './search/search.component';
 import {FormsModule} from '@angular/forms';
 import { ImageviewComponent } from './imageview/imageview.component';
 import {HttpClientModule} from '@angular/common/http';
+import { PlacesviewComponent } from './placesview/placesview.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchComponent,
-    ImageviewComponent
+    ImageviewComponent,
+    PlacesviewComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

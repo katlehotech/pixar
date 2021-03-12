@@ -10,10 +10,10 @@ import {Observable} from 'rxjs';
 export class SearchService {
   constructor(private httpClient: HttpClient) { }
 
-  getImages(search: string): Observable<any> {
-    return this.httpClient.get(ENV.Api_Base_url + ENV.Search_route + '?query=' + search, {
+  getImages(location: string | undefined): Observable<any> {
+    return this.httpClient.get(ENV.Unsplash_Api_Base_url + ENV.Unsplash_Search_route + '?query=' + location + '&orientation=squarish', {
       headers: {
-        Authorization: 'Client-ID ' + ENV.Access_key,
+        Authorization: 'Client-ID ' + ENV.Unsplash_Access_key,
         'Content-Type': 'application/json'
       }
     });
